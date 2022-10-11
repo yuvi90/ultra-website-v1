@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
+//Components
 import { FaBars, FaMagento, FaTimes } from "react-icons/fa";
 import { Container, Button } from "../../styles/GlobalStyles";
 
