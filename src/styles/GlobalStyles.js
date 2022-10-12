@@ -1,4 +1,8 @@
+// Dependencies
 import styled, { createGlobalStyle } from "styled-components";
+
+//----------------------------------------------------------------
+// Global Styles
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -9,6 +13,9 @@ export const GlobalStyles = createGlobalStyle`
         user-select: none;
     }
 `;
+
+//----------------------------------------------------------------
+// Global Components
 
 export const Container = styled.div`
     width: 100%;
@@ -30,6 +37,7 @@ export const Button = styled.button`
     font-size: ${(props)=>(props.fontBig? "20px":"16px")};
     outline: none;
     cursor: pointer;
+    border: none;
 
     &:hover{
         transition: all 0.3s ease-out;

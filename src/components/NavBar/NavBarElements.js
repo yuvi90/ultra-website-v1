@@ -1,9 +1,11 @@
+// Dependencies
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
-//Components
 import { FaBars, FaMagento, FaTimes } from "react-icons/fa";
 import { Container, Button } from "../../styles/GlobalStyles";
+
+//----------------------------------------------------------------
+// Components
 
 export const Nav = styled.nav`
     height: 80px;
@@ -76,6 +78,7 @@ export const MenuContainer = styled.div`
 export const MenuLinks = styled(Link)`
     color: #fff;
     font-size: 1.25rem;
+    font-weight: 400;
     text-decoration: none;
     padding: 0.5rem 0;
     border-bottom: 2px solid transparent;
@@ -86,5 +89,5 @@ export const MenuLinks = styled(Link)`
 `;
 
 export const NavMenuButton = styled(Button)`
-    font-weight: 600;
+    font-weight: 500;
 `;

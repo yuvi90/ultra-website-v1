@@ -1,12 +1,16 @@
+// Dependencies
 import React from 'react';
 // Components
-import { InfoSection } from '../../components'
-import { homePageObj1 } from "./Data";
+import { homePageObj1, homePageObj2 } from "./Data";
+import { Section } from '../../components'
+
+//----------------------------------------------------------------
 
 const Home = () => {
   return (
     <>
-        <InfoSection {...homePageObj1} />
+        <Section {...homePageObj1} />
+        <Section {...homePageObj2} />
     </>
   )
 }

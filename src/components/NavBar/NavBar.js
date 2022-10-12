@@ -1,7 +1,10 @@
+// Dependencies
 import React, { useEffect, useState } from 'react';
-
+import { Link } from 'react-router-dom';
 // Components
 import { Nav, NavContainer, NavLogo, NavLogoIcon, MobileMenuContainer, CrossIcon, MenuIcon, MenuContainer, MenuLinks, NavMenuButton } from './NavBarElements';
+
+//----------------------------------------------------------------
 
 const NavBar = () => {
 
@@ -30,7 +33,7 @@ const NavBar = () => {
                     <MenuLinks to="/products" onClick={toogleMenu}>Products</MenuLinks>
                     <MenuLinks to="/services" onClick={toogleMenu}>Services</MenuLinks>
                     <MenuLinks to="/prices" onClick={toogleMenu}>Prices</MenuLinks>
-                    <NavMenuButton onClick={toogleMenu} big={windowWidth<991?true:false}>SIGN UP</NavMenuButton>
+                    <Link to="/sign-up"><NavMenuButton onClick={toogleMenu} big={windowWidth<991?true:false}>SIGN UP</NavMenuButton></Link>
                 </MenuContainer>
             
             </NavContainer>
