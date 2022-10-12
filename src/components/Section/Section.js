@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { Container, Button } from '../../styles/GlobalStyles'
 import { SectionContainer, TextColumn, ImgColumn, SectionRow, TextWrapper, TopLine, HeadLine, SubTitle, ImgWrapper, Img } from './SectionElements'
 
-const Section = ({ lightBG, image, text, button }) => {
+//----------------------------------------------------------------
 
-  //----------------------------------------------------------------
+const Section = ({ lightBG, image, text, button }) => {
   
   return (
     <SectionContainer lightBG={lightBG}>
