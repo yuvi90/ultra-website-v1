@@ -1,12 +1,12 @@
 import React from 'react';
 // Components
 import { InfoSection } from '../../components'
-import { homePageData } from "./Data";
+import { homePageObj1 } from "./Data";
 
 const Home = () => {
   return (
     <>
-        <InfoSection {...homePageData} />
+        <InfoSection {...homePageObj1} />
     </>
   )
 }

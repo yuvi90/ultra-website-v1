@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Components
 import { Nav, NavContainer, NavLogo, NavLogoIcon, MobileMenuContainer, CrossIcon, MenuIcon, MenuContainer, MenuLinks, NavMenuButton } from './NavBarElements';
@@ -7,6 +7,12 @@ const NavBar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const toogleMenu = () => { setIsOpen(!isOpen) };
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(()=>{
+        window.addEventListener('resize', () => setWindowWidth(window.innerWidth))
+        return () => {window.removeEventListener('resize', () => setWindowWidth(window.innerWidth))}
+    },[]);
 
     return (
         <Nav>
@@ -24,7 +30,7 @@ const NavBar = () => {
                     <MenuLinks to="/products" onClick={toogleMenu}>Products</MenuLinks>
                     <MenuLinks to="/services" onClick={toogleMenu}>Services</MenuLinks>
                     <MenuLinks to="/prices" onClick={toogleMenu}>Prices</MenuLinks>
-                    <NavMenuButton big onClick={toogleMenu}>SIGN UP</NavMenuButton>
+                    <NavMenuButton onClick={toogleMenu} big={windowWidth<991?true:false}>SIGN UP</NavMenuButton>
                 </MenuContainer>
             
             </NavContainer>
