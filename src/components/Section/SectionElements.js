@@ -24,7 +24,8 @@ export const SectionRow = styled.div`
 export const TextColumn = styled.div`
     max-width: 50%;
     flex-basis: 50%;
-    flex: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     display: flex;
     justify-content: ${({ alignStart }) => ( !alignStart ? "flex-start" : "flex-end" )};
     
@@ -38,7 +39,8 @@ export const TextColumn = styled.div`
 export const ImgColumn = styled.div`
     max-width: 50%;
     flex-basis: 50%;
-    flex: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     display: flex;
     justify-content: ${({ alignStart }) => ( alignStart ? "flex-start" : "flex-end" )};
 
