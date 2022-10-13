@@ -1,5 +1,9 @@
+// Dependencies
 import React from 'react';
+// Components
 import { FooterContainer, SubcriptionWrapper, SubscribeBtn, FooterLinksContainer, FooterLinksWrapper, FooterLinks } from "./FooterElements";
+
+//----------------------------------------------------------------
 
 const Footer = () => {
     return (

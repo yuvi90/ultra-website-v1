@@ -1,9 +1,8 @@
 // Dependencies
 import styled from "styled-components";
 
-//----------------------------------------------------------------
-// Components
-
+//-------------------------------Components
+// Section Main Container
 export const SectionContainer = styled.section`
     background-color: ${({ lightBG }) => (lightBG ? "#fff" : "#101522")};
     color: #fff;
@@ -14,12 +13,18 @@ export const SectionContainer = styled.section`
     }
 `;
 
+//-------------------------------Components
+// Row Wrapper
+
 export const SectionRow = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
 `;
+
+//-------------------------------Components
+// Text Column
 
 export const TextColumn = styled.div`
     max-width: 50%;
@@ -29,21 +34,6 @@ export const TextColumn = styled.div`
     display: flex;
     justify-content: ${({ alignStart }) => ( !alignStart ? "flex-start" : "flex-end" )};
     
-    @media screen and (max-width: 991px) {
-        max-width: 100%;
-        flex-basis: 100%;
-        justify-content: center;
-    }
-`;
-
-export const ImgColumn = styled.div`
-    max-width: 50%;
-    flex-basis: 50%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: ${({ alignStart }) => ( alignStart ? "flex-start" : "flex-end" )};
-
     @media screen and (max-width: 991px) {
         max-width: 100%;
         flex-basis: 100%;
@@ -88,6 +78,24 @@ export const SubTitle = styled.p`
     line-height: 24px;
     max-width: 440px;
     margin-bottom: 35px;
+`;
+
+//-------------------------------Components
+// Image Column
+
+export const ImgColumn = styled.div`
+    max-width: 50%;
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: ${({ alignStart }) => ( alignStart ? "flex-start" : "flex-end" )};
+
+    @media screen and (max-width: 991px) {
+        max-width: 100%;
+        flex-basis: 100%;
+        justify-content: center;
+    }
 `;
 
 export const ImgWrapper = styled.div`

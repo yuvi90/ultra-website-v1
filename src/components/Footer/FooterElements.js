@@ -1,6 +1,10 @@
+// Dependencies
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../../styles/GlobalStyles";
+
+//-------------------------------Components
+// Container
 
 export const FooterContainer = styled.footer`
     background-color: #101522;
@@ -12,7 +16,7 @@ export const FooterContainer = styled.footer`
     padding: 4rem 0 2rem 0;
 `;
 
-//----------------------------------------------
+//-------------------------------Components
 // Newsletter
 
 export const SubcriptionWrapper = styled.div`
@@ -72,7 +76,7 @@ export const SubscribeBtn = styled(Button)`
 `;
 
 
-//----------------------------------------------
+//-------------------------------Components
 //FooterLinks
 
 export const FooterLinksContainer = styled.div`

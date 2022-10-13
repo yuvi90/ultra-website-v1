@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { FaBars, FaMagento, FaTimes } from "react-icons/fa";
 import { Container, Button } from "../../styles/GlobalStyles";
 
-//----------------------------------------------------------------
-// Components
+//-------------------------------Components
+// Nav Main Container
 
 export const Nav = styled.nav`
     height: 80px;
@@ -16,12 +16,18 @@ export const Nav = styled.nav`
     z-index: 999;
 `;
 
+//-------------------------------Components
+// Nav Container
+
 export const NavContainer = styled(Container)`
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 `;
+
+//-------------------------------Components
+// Logo
 
 export const NavLogo = styled(Link)`
     color: #fff;
@@ -36,6 +42,9 @@ export const NavLogo = styled(Link)`
 export const NavLogoIcon = styled(FaMagento)`
     margin-right: 0.5rem;
 `;
+
+//-------------------------------Components
+// Menu Icon
 
 export const MobileMenuContainer = styled.div`
     display: none;
@@ -55,6 +64,9 @@ export const MenuIcon = styled(FaBars)`
     color: #fff;
     cursor: pointer;
 `;
+
+//-------------------------------Components
+// Menu
 
 export const MenuContainer = styled.div`
         display: flex;
