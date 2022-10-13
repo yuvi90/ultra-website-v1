@@ -1,7 +1,7 @@
 // Dependencies
 import React from 'react';
 // Components
-import { homePageObj1, homePageObj2 } from "./Data";
+import { homePageObj1, homePageObj2, homePageObj3 } from "./Data";
 import { Section } from '../../components'
 
 //----------------------------------------------------------------
@@ -11,6 +11,7 @@ const Home = () => {
     <>
         <Section {...homePageObj1} />
         <Section {...homePageObj2} />
+        <Section {...homePageObj3} />
     </>
   )
 }
